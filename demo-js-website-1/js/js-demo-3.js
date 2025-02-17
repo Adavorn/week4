@@ -15,13 +15,17 @@
 
         function demo_f1(){
             console.log("#demo functon 1")
-            alert("#demo functon 1")
+            alert("# js demo functon 1")
         }
 
         function demo_f2(){
             console.log("#demo functon 2")
-            alert("#demo functon 2")
+            alert("#js demo functon 2")
         }
 
+        function page_load()
+        {
+            console.log("#js demo functon 3")
+        }
         //call function
         display_info_1();

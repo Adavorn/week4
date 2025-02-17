@@ -18,14 +18,22 @@
             alert("# js demo functon 1")
         }
 
+
         function demo_f2(){
             console.log("# demo functon 2")
             alert("#js demo functon 2")
         }
 
+        //onload event - occurs everytime a page is displayed
+        //define a function called page_loa
         function page_load()
         {
             console.log("# page_load:js demo functon 3")
+            display_info_1();
         }
+
         //call function
-        display_info_1();
+        //best practice call a function in a event or another function
+        //display_info_1();
+
+

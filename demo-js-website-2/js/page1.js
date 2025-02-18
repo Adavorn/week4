@@ -234,3 +234,37 @@ function demo_variables4(){
     console.log(var1,var2,var3)
 
 }
+
+function demo_variables_numbers(){
+
+    //const - readonly fixed
+    const _function_name = "demo_variables_numbers"
+
+    //var - es4
+    var num1 = 5; //integer
+
+    //let - es5+
+    let num2 = 15.1; //floating point number including decimal
+
+    let num3 = "20.1" //string
+    
+    let num4 = 25 //number intger
+
+    //convert number to string
+    let string_num4 = num4.toString()
+
+    //defining and assigning values in 1 statement
+    //const total = (num1 + num2 + num3)
+   
+    //convert string to float
+    const total = (num1 + num2 + parseFloat(num3))
+
+    //convert string to uppercase
+    console.log(_function_name.toUpperCase())
+
+    //concatination
+    console.log("total: " + total)
+    console.log("total: " , total)
+    console.log("total 2 fixed decimal point:" , total.toFixed(2))
+
+}

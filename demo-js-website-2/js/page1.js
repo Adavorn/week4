@@ -28,7 +28,7 @@ function demo_button1()
 }
 
 function demo_variables1(){
-    
+
     console.log("# Page1 - variables1")
     //alert("# Page1 - variables1")
 
@@ -54,6 +54,15 @@ function demo_variables1(){
 
     //use variable
     console.log(var1)
+
+    //combine string variables = concatination
+    console.log(var1 + var_2)
+
+    //combine string and number = concatination
+    console.log(var1 + var2)
+
+    //combine variables = concatination
+    console.log(var1,var2,var3)
 }
 
 function demo_variables2(){

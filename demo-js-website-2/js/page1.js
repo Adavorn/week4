@@ -25,3 +25,7 @@ function demo_button1()
     alert("# Page1 - Button1")
 }
 
+function demo_variables1(){
+    console.log("# Page1 - variables1")
+    alert("# Page1 - variables1")
+}

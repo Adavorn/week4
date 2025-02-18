@@ -268,3 +268,7 @@ function demo_variables_numbers(){
     console.log("total 2 fixed decimal point:" , total.toFixed(2))
 
 }
+
+function demo_variables_strings(){
+    
+}

@@ -270,5 +270,16 @@ function demo_variables_numbers(){
 }
 
 function demo_variables_strings(){
-    
+    const _function_name = "page1: demo_variables_strings";
+
+    let str1 = "intro to js"
+    const str2 = " javascript "
+    const _version = "es6+"
+
+    console.log(_function_name.toUpperCase)
+    console.log("length: ", _function_name.length)
+    console.log(str1)
+    console.log(str2)
+    console.log(str2.trim())
+
 }

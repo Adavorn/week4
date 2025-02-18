@@ -43,7 +43,7 @@ function demo_variables1(){
     var1 = "intro to javascript"; //data-type - string
     var_2 = "6"; //data-type - string "text inside double quotes counts as string"
     var2 = 6 //data-type - number integer
-    var3 = 6.0 //data-type - number floating point including decimal
+    var3 = 6.1 //data-type - number floating point including decimal
     var4 = true //data-type boolean - true/false
 
     //other data types - boolean = true/false, object
@@ -61,6 +61,9 @@ function demo_variables1(){
     //combine string and number = concatination
     console.log(var1 + var2)
 
+        //combine string and number = concatination
+        console.log(var1 + " " + var2)
+
     //combine variables = concatination
     console.log(var1,var2,var3)
 }
@@ -68,6 +71,7 @@ function demo_variables1(){
 function demo_variables2(){
     console.log("# Page1 - variables2")
     //alert("# Page1 - variables2")
+
 }
 
 function demo_variables3(){

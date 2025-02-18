@@ -5,6 +5,8 @@ javascript multi line
 comment
 */
 
+//global or page level variables - defined outside a function access by any function
+
 function display_info(){
     console.log("# Page1 - Display Info");
 }
@@ -26,16 +28,40 @@ function demo_button1()
 }
 
 function demo_variables1(){
+    
     console.log("# Page1 - variables1")
-    alert("# Page1 - variables1")
+    //alert("# Page1 - variables1")
+
+    //variable - in memory data, to uses later in your code
+    //data type - type of data stored in memory -  string, number, boolean, true/false, objects, other
+
+    //define memory varrible to be used later in code
+    //global variables - accessed by other functions
+    //global or page level variables -defined outside a function ,accessed by any function
+    //function variables - access only by current function
+    
+    var1 = "intro to javascript"; //data-type - string
+    var_2 = "6"; //data-type - string "text inside double quotes counts as string"
+    var2 = 6 //data-type - number integer
+    var3 = 6.0 //data-type - number floating point including decimal
+    var4 = true //data-type boolean - true/false
+
+    //other data types - boolean = true/false, object
+
+    //can convert string to number
+
+    //when function end - memory variable is removed from memory
+
+    //use variable
+    console.log(var1)
 }
 
 function demo_variables2(){
     console.log("# Page1 - variables2")
-    alert("# Page1 - variables2")
+    //alert("# Page1 - variables2")
 }
 
 function demo_variables3(){
     console.log("# Page1 - variables3")
-    alert("# Page1 - variables3")
+    //alert("# Page1 - variables3")
 }

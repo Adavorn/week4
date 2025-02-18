@@ -29,3 +29,13 @@ function demo_variables1(){
     console.log("# Page1 - variables1")
     alert("# Page1 - variables1")
 }
+
+function demo_variables2(){
+    console.log("# Page1 - variables2")
+    alert("# Page1 - variables2")
+}
+
+function demo_variables3(){
+    console.log("# Page1 - variables3")
+    alert("# Page1 - variables3")
+}

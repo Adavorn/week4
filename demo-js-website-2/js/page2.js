@@ -36,6 +36,7 @@ function lnk_dom_demo2()
     //# learn more about different object types ie: w3schools or online refrences
     //# ie: HTMLElement object -- different structers
     //# Json object -- different structers
+   
     const eleDivInfo = document.getElementById("div-display-info"); //data type = HTMLelement or null
  
     //# if statement - make a decsion in a code - ture/false
@@ -62,10 +63,30 @@ function lnk_dom_demo3()
 
     //# selct text element
     //# selct div element
-    const txtSearch = document.getElementById("txtSearch"); //htmlElement object
+    const txtsearch = document.getElementById("txtsearch"); //htmlElement object
     const eleDivInfo = document.getElementById("div-display-info"); //htmlElement object
 
     //# check if text and div elemnet is null
+    if (txtsearch == null) {
+
+        console.log("# txtsearch field not found")
+        return false//cancel mouse click
+    }
+    
+
+    if (eleDivInfo == null) {
+        
+        console.log("# div-display-info not found")
+        return false//cancel mouse click
+    }
+
+    //continue if no error
+
     //# display search text info in div
 
+    //txt.search.value = retrieve text entered in text field
+    msgText = "txtsearch" + txtsearch.value;
+    
+    //eleDivInfo.innerHTML = msgText;
+    eleDivInfo.innerHTML = msgText;
 }

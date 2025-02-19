@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2 - Js DOM Demo</title>
     <link rel="stylesheet" href="css/global-1.css">
+    <script src="js/page2.js"></script>
 </head>
-<body>
+<body onload="page_load()">
     <nav>
         <a href=""><img src="logo-1.jpg" width="100" height="30" alt="logo 1"></a>
         <a href="page1.html">page 1</a>
@@ -27,12 +28,12 @@
             </div>
             <P></P>
             <div>
-                <a href="#">Link 1</a>
+                <a href="#" onclick="lnk_dom_demo1()">Dom Demo 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
             </div>
             <P></P>
-            <div>
+            <div id="div-display-info">
                 <P>Display Info</P>
             </div>
         </section>

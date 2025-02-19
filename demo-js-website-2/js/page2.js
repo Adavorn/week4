@@ -53,3 +53,16 @@ function lnk_dom_demo2()
         eleDivInfo.innerText = msgtext;
     }
 }
+
+function lnk_dom_demo3()
+{
+    const msgText = "link_dom_demo_3"
+
+    console.log(msgText)
+
+    //# selct text element
+    //# selct div element
+    //# check if text and div elemnet is null
+    //# display search text info in div
+
+}

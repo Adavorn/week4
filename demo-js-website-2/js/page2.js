@@ -56,7 +56,7 @@ function lnk_dom_demo2()
 
 function lnk_dom_demo3()
 {
-    const msgText = "link_dom_demo_3"
+    const msgText = "# page2 : link_dom_demo_3"
 
     console.log(msgText)
 

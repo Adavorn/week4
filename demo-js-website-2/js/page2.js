@@ -165,11 +165,13 @@ function lnkClear(){
     //-- null - field was definded and does not have a value
     //undefined variable is avariable that was not created
 
-    if(txtsearch == null | txtsearch == undefined) {
+   if(txtsearch == null | txtsearch == undefined) {
         msgText = "# txtsearch is null"
         return false
     }
     txtsearch.value = ""; //clear text field
     txtsearch.focus(); //set keyboard focus to the text field
+
+    divdisplayinfo.innerText = ""; //clear div content
     
 }

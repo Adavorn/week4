@@ -17,8 +17,15 @@ function btnSubmit(){
             1- select div-display-info using document.getElementById
             2- validate if div-display-info is not null or undefined, if so, display element not found message and exit function
     */
+   
     const divdisplayinfo = document.getElementById("divdisplayinfo");
 
+    if(divdisplayinfo == null | divdisplayinfo == undefined){
+     msgText = "# divdisplayinfo not null/undefined"
+     console.log(msgText)
+     return false; //prevent form submit
+    }
+    
     /*
         firtname:
             1- select firstname field using document.getElementById

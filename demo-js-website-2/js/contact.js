@@ -34,16 +34,16 @@ function btnSubmit(){
             3- validate if firstname field is empty, if so, display invalid field entry message and exit function
     */
    
-   
-            const txtfirstname = document.getElementById("txtfirstname");
-
+//1.)  
+    const txtfirstname = document.getElementById("txtfirstname");
+//2.)
     if(txtfirstname == null | txtfirstname == undefined){
         msgText = "# txtfirstname not found"
         console.log(msgText)
         return false; //prevent form submit/exit function
         
     }
-   
+//3.)   
     if(txtfirstname.value.trim().length == 0) {
         msgText = "# txtfirstname not found"
         console.log(msgText)
@@ -93,6 +93,9 @@ function btnSubmit(){
         txtfirstname.focus();
     */
 
+        txtfirstname.value = "";
+
+        
     //prevent form post
     return false
 

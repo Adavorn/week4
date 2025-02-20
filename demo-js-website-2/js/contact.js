@@ -21,7 +21,7 @@ function btnSubmit(){
     const divdisplayinfo = document.getElementById("divdisplayinfo");
 
     if(divdisplayinfo == null | divdisplayinfo == undefined){
-     msgText = "# divdisplayinfo not null/undefined"
+     msgText = "# divdisplayinfo not found"
      console.log(msgText)
      return false; //prevent form submit/exit function
     }

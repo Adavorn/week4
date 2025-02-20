@@ -166,10 +166,10 @@ function lnkClear(){
     //undefined variable is avariable that was not created
 
     if(txtsearch == null | txtsearch == undefined) {
-
         msgText = "# txtsearch is null"
         return false
     }
-    //clear text field
-    //set keyboard focus to the text field
+    txtsearch.value = ""; //clear text field
+    txtsearch.focus(); //set keyboard focus to the text field
+    
 }

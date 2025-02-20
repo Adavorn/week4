@@ -21,22 +21,18 @@
         </section>
         <P></P>
         <div id="divdisplayinfo"></div>
-        <form action=>
-            <label for="fname">First Name*:</label><br>
-            <input type="text" id="txtfirstname" name="fname" value="John" required><br><br>
-    
-            <label for="lname">Last Name*:</label><br>
-            <input type="text" id="txtlastname" name="lname" value="Doe" required><br><br>
-    
-            <label for="Email">Email*:</label><br>
-            <input type="email" id="txtEmail" name="Email" value="Email@gmail.com" required><br><br>
-    
-            <label for="Comment">Comment:</label><br>
-            <textarea id="Comment" name="Comment" rows="10" cols="30"></textarea><br><br>
-            <P></P>
-            <input type="submit" value="Submit" onclick="btnSubmit()">
-            <a href="#" onclick="lnkClear()">Clear</a>
-        </form> 
+        <form>
+            <label>* First Name: </label><br>
+            <input type="text" id="txtfirstname" placeholder="* firstname required" maxlength="25"><br>
+            <label></label> Last Name: </label><br>
+            <input type="text" id="txtlastname" maxlength="25"><br>
+            <label>* Email: </label><br>
+            <input type="text" id="txtemail" placeholder="* email required" maxlength="80"><br>
+            <label>* comment: </label><br>
+            <textarea id="txtcomment" placeholder="* comment required" cols="30" rows="5"></textarea><br>
+            <p></p>
+            <button onclick="btnSubmit()">submit</button> <a href="#" onclick="btnClear()">clear</a>
+        </form>
     </main>
     <P></P>
     <footer class="global-footer">

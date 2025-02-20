@@ -23,16 +23,35 @@ function btnSubmit(){
     if(divdisplayinfo == null | divdisplayinfo == undefined){
      msgText = "# divdisplayinfo not null/undefined"
      console.log(msgText)
-     return false; //prevent form submit
+     return false; //prevent form submit/exit function
     }
-    
+
+    console.log("-- validate First name")
     /*
         firtname:
             1- select firstname field using document.getElementById
             2- validate if firstname field is not null or undefined, if so, display field not found message and exit function
             3- validate if firstname field is empty, if so, display invalid field entry message and exit function
     */
+   
+   
+            const txtfirstname = document.getElementById("txtfirstname");
 
+    if(txtfirstname == null | txtfirstname == undefined){
+        msgText = "# txtfirstname not found"
+        console.log(msgText)
+        return false; //prevent form submit/exit function
+        
+    }
+   
+    if(txtfirstname.value.trim().length == 0) {
+        msgText = "# txtfirstname not found"
+        console.log(msgText)
+        divdisplayinfo.innerText = msgText
+        return false; //prevent form submit/exit function
+    }
+
+    console.log("-- get last name element --")
     /*
         lastname:
             1- select lastname field using document.getElementById

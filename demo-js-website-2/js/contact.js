@@ -127,7 +127,7 @@ const txtcomment = document.getElementById("txtcomment");
 
 
     /*
-        //- display form field information in log ie: 
+            //* display form field information in log ie: 
 
             msgText = "form submitted: firstname: " + txtfirstname.value + ", lastname: " + 
             txtlastname.value + ", email: " + txtemail.value + ", comment: ";

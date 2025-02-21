@@ -26,7 +26,21 @@ function btnSubmit(){
      return false; //prevent form submit/exit function
     }
 
-    console.log("-- validate First name")
+    console.log("-- get error fields --")
+
+    /*
+      select error fields
+    */
+      
+     const errorfirstname = document.getElementById("errorfirstname");
+ 
+     if(errorfirstname == null | errorfirstname == undefined) {
+        msgText = "# errorfirstname not found"
+        console.log(msgText)    
+        return false; //prevent form submit/ext function 
+      }
+   
+      console.log("-- get first name element --")
     /*
         firtname:
             1- select firstname field using document.getElementById
@@ -40,7 +54,7 @@ function btnSubmit(){
     if(txtfirstname == null | txtfirstname == undefined){
         msgText = "# First Name Not Found"
         console.log(msgText)
-        divdisplayinfo.innerText = msgTex
+        divdisplayinfo.innerText = msgText
         return false; //prevent form submit/exit function
         
     }
@@ -52,7 +66,8 @@ function btnSubmit(){
         return false; //prevent form submit/exit function
     }
 
-    console.log("-- get last name element --")
+    console.log("-- get error last name --")
+
 
     /*
         lastname:

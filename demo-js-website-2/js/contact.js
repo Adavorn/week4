@@ -97,7 +97,10 @@ const txtemail = document.getElementById("txtemail");
         divdisplayinfo.innerText = msgText
         return false; //prevent form submit/exit function
     }
-
+   
+   
+    //other validation ifemail/string is a valid email pattern
+    //or html5 <input type="email"
 
     console.log("-- get comment element --")
     /*
@@ -135,7 +138,9 @@ const txtcomment = document.getElementById("txtcomment");
             console.log(msgText)
     */
 
-    msgText = "# form submitted: firstname: " +txtfirstname.value
+    msgText = "# form submitted: firstname: " + txtfirstname.value + ", lastname: " + 
+    txtlastname.value + ", email: " + txtemail.value + ", comment: " + txtcomment.value ;
+   
     console.log(msgText)
 
     msgText = "form submitted"

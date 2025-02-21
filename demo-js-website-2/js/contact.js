@@ -38,14 +38,15 @@ function btnSubmit(){
     const txtfirstname = document.getElementById("txtfirstname");
 //2.)
     if(txtfirstname == null | txtfirstname == undefined){
-        msgText = "# txtfirstname not found"
+        msgText = "# First Name Not Found"
         console.log(msgText)
+        divdisplayinfo.innerText = msgTex
         return false; //prevent form submit/exit function
         
     }
 //3.)   
     if(txtfirstname.value.trim().length == 0) {
-        msgText = "# txtfirstname not found"
+        msgText = "# First Name Not Found"
         console.log(msgText)
         divdisplayinfo.innerText = msgText
         return false; //prevent form submit/exit function
@@ -58,6 +59,8 @@ function btnSubmit(){
             2- validate if lastname field is not null or undefined, if so, display invalid field entry message and exit function
     */
 
+
+
     /*
         email:
             1- select email field using document.getElementById
@@ -65,12 +68,18 @@ function btnSubmit(){
             3- validate if email field is empty, if so, display invalid field entry message and exit function
     */
 
+
+
+
     /*
         comment:
             1- select comment field using document.getElementById
             2- validate if comment field is not null or undefined, if so, display field not found message and exit function
             3- validate if comment field is empty, if so, display invalid field entry message and exit function
     */
+
+
+
 
     /*
         //- display form field information in log ie: 
@@ -80,6 +89,9 @@ function btnSubmit(){
 
             console.log(msgText)
     */
+
+
+
 
     //divdisplayinfo.innerText = "form submitted"
 

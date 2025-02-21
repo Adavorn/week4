@@ -53,13 +53,25 @@ function btnSubmit(){
     }
 
     console.log("-- get last name element --")
+
     /*
         lastname:
             1- select lastname field using document.getElementById
             2- validate if lastname field is not null or undefined, if so, display invalid field entry message and exit function
     */
 
+//1.)  
+    const txtlastname = document.getElementById("txtlastname");
+//2.)
+    if(txtlastname == null | txtlastname == undefined){
+        msgText = "# Last Name Not Found"
+        console.log(msgText)
+        divdisplayinfo.innerText = msgTex
+        return false; //prevent form submit/exit function
+        
+    }
 
+    console.log("-- get email element --")
 
     /*
         email:
@@ -68,9 +80,26 @@ function btnSubmit(){
             3- validate if email field is empty, if so, display invalid field entry message and exit function
     */
 
+//1.)  
+const txtemail = document.getElementById("txtemail");
+//2.)
+    if(txtemail == null | txtemail == undefined){
+        msgText = "# Email Not Found"
+        console.log(msgText)
+        divdisplayinfo.innerText = msgTex
+        return false; //prevent form submit/exit function
+        
+    }
+//3.)   
+    if(txtemail.value.trim().length == 0) {
+        msgText = "# Email Not Found"
+        console.log(msgText)
+        divdisplayinfo.innerText = msgText
+        return false; //prevent form submit/exit function
+    }
 
 
-
+    console.log("-- get comment element --")
     /*
         comment:
             1- select comment field using document.getElementById
@@ -78,7 +107,23 @@ function btnSubmit(){
             3- validate if comment field is empty, if so, display invalid field entry message and exit function
     */
 
-
+//1.)  
+const txtcomment = document.getElementById("txtcomment");
+//2.)
+    if(txtcomment == null | txtcomment == undefined){
+        msgText = "# comment Not Found"
+        console.log(msgText)
+        divdisplayinfo.innerText = msgTex
+        return false; //prevent form submit/exit function
+        
+    }
+//3.)   
+    if(txtcomment.value.trim().length == 0) {
+        msgText = "# comment Not Found"
+        console.log(msgText)
+        divdisplayinfo.innerText = msgText
+        return false; //prevent form submit/exit function
+    }
 
 
     /*
@@ -90,22 +135,23 @@ function btnSubmit(){
             console.log(msgText)
     */
 
+    msgText = "# form submitted: firstname: " +txtfirstname.value
+    console.log(msgText)
+
+    msgText = "form submitted"
+    divdisplayinfo.innerText = msgText
 
 
-
-    //divdisplayinfo.innerText = "form submitted"
-
-    /*
-        //clear each field value 
-        txtfirstname.value = "";
+     //clear each field value 
+        txtfirstname.value = ""; 
         txtlastname.value = "";
         txtemail.value = "";
         txtcomment.value = "";
-
+    /*
         txtfirstname.focus();
     */
 
-        txtfirstname.value = "";
+        txtfirstname.focus();
 
         
     //prevent form post
@@ -119,5 +165,9 @@ function btnClear(){
 
     console.log(msgText.toUpperCase())
 
+    txtfirstname.value = ""; 
+    txtlastname.value = "";
+    txtemail.value = "";
+    txtcomment.value = "";
 }
 

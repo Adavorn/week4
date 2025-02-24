@@ -143,11 +143,11 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log(items[0])
     console.log(item_names[1])
     
-    const index = 1
+    let index = 1
     console.log(item_names_and_values[index])
    
     console.log("-- increase index index++ = add 1")
-    
+
     index++
     console.log(item_names_and_values[index])
 

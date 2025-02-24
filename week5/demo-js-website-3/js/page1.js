@@ -110,4 +110,57 @@ function lnkArrayLoopDemo1(){
 
 }
 
+function lnkArrayAddRemoveLoopDemo1()
+{
+    let msgText = "# page1 : lnkArrayAddRemoveLoopDemo1"
+    console.log(msgText.toUpperCase())
+    const items = [5,10,15.1,20,25]
+    const item_names = ["itema","itemb","itemc","itemd","iteme",]
+    const item_names_and_values = [5,"itema",15,"itemb",15.1,"itemc","itemd","iteme",]
+    
+    //print arrays 
+    console.log("---- arrays ---------")
+    console.log(items)
+    
+    console.log("-------------")
+    console.log(item_names)
+    
+    console.log("-------------")
+    console.log(item_names_and_values)
+    
+    console.log("-------------")
+    console.log("")
+    
+    //array length
+    console.log("---array--length----")
+    console.log(items.length)
+    console.log(item_names.length)
+    console.log(item_names_and_values.length)
+    console.log("")
+    
+    //access array by index 
+    console.log("-- access array index ")
+    console.log(items[0])
+    console.log(item_names[1])
+    
+    const index = 1
+    console.log(item_names_and_values[index])
+   
+    console.log("-- increase index index++ = add 1")
+    
+    index++
+    console.log(item_names_and_values[index])
 
+    console.log("")
+    console.log("--add item---")
+    //add item to array 
+   
+    //array loop 
+   
+    //remove item from array 
+   
+    //array loop
+   
+   
+    //other loop do loop, while loop , foreach 
+}

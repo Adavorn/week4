@@ -154,10 +154,19 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log("")
     console.log("--add item---")
     //add item to array 
-   
-    //array loop 
-   
+   items.push(20.7)
+  
+   //print array 
+    console.log(items)
+
+    console.log()
     //remove item from array 
+
+    //print array 
+
+    //update
+
+    //print
    
     //array loop
    

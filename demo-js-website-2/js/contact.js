@@ -26,21 +26,24 @@ function btnSubmit(){
      return false; //prevent form submit/exit function
     }
 
-    console.log("-- get error fields --")
+    console.log("-- get error fiedls --")
 
-    /*
-      select error fields
-    */
-      
-     const errorfirstname = document.getElementById("errorfirstname");
- 
-     if(errorfirstname == null | errorfirstname == undefined) {
+/*
+    select error fields
+*/
+    
+    const errorfirstname = document.getElementById("errorfirstname");
+
+        if(errorfirstname == null | errorfirstname == undefined) {
         msgText = "# errorfirstname not found"
         console.log(msgText)    
         return false; //prevent form submit/ext function 
-      }
-   
-      console.log("-- get first name element --")
+    }
+    
+    //hide error lables
+        errorfirstname.style.display = "none"
+
+    console.log("-- get first name element --")
     /*
         firtname:
             1- select firstname field using document.getElementById
@@ -55,6 +58,21 @@ function btnSubmit(){
         msgText = "# First Name Not Found"
         console.log(msgText)
         divdisplayinfo.innerText = msgText
+
+        txtfirstname.style.borderColor = "initial"
+
+        //show error label
+        errorfirstname.style.display = "inline-block"
+
+        //hide error label
+       // errorfirstname.style.display = "none"
+
+        //other:
+        //add remove element class
+        //txtfirstname.style.????? -- border/color/other
+        //txtfirstname.classList.remove(".errorfirstname")
+        //txtfirstname.classList.add(".errorfirstname")
+
         return false; //prevent form submit/exit function
         
     }
@@ -102,6 +120,10 @@ const txtemail = document.getElementById("txtemail");
         msgText = "# Email Not Found"
         console.log(msgText)
         divdisplayinfo.innerText = msgTex
+
+        erroremail.style.display = "inline-block"
+
+
         return false; //prevent form submit/exit function
         
     }
@@ -132,6 +154,9 @@ const txtcomment = document.getElementById("txtcomment");
         msgText = "# comment Not Found"
         console.log(msgText)
         divdisplayinfo.innerText = msgTex
+
+        errorcomment.style.display = "inline-block"
+
         return false; //prevent form submit/exit function
         
     }
@@ -153,9 +178,14 @@ const txtcomment = document.getElementById("txtcomment");
             console.log(msgText)
     */
 
-    msgText = "# form submitted: firstname: " + txtfirstname.value + ", lastname: " + 
+   /* msgText = "# form submitted: firstname: " + txtfirstname.value + ", lastname: " + 
     txtlastname.value + ", email: " + txtemail.value + ", comment: " + txtcomment.value ;
-   
+   */
+  
+    //optimize string concat - es6+ template literal string
+    msgText = `# form submitted: firstname: ${txtfirstname.value}, lastname: 
+    ${txtlastname.value} , email:  ${txtemail.value}, comment: 
+    ${txtcomment.value} `
     console.log(msgText)
 
     msgText = "form submitted"
@@ -181,13 +211,59 @@ const txtcomment = document.getElementById("txtcomment");
 
 
 function btnClear(){
+
     const msgText = "# page3: btnClear";
 
     console.log(msgText.toUpperCase())
 
-    txtfirstname.value = ""; 
+    const divdisplayinfo = document.getElementById("divdisplayinfo");
+    const txtfirstname = document.getElementById("txtfirstname");
+    const txtlastname = document.getElementById("txtlastname");
+    const errorfirstname = document.getElementById("errorfirstname");
+    const txtemail = document.getElementById("txtemail");
+    const txtcomment = document.getElementById("txtcomment");
+    
+    
+    if(divdisplayinfo == null | divdisplayinfo == undefined) {
+      msgText = "# divdisplayinfo not found"
+      console.log(msgText)    
+      return false; //prevent form submit/ext function 
+    }
+     
+    if(errorfirstname == null | errorfirstname == undefined) {
+        msgText = "# errorfirstname not found"
+        console.log(msgText)    
+        return false; //prevent form submit/ext function 
+    }
+    
+    if(txtfirstname == null | txtfirstname == undefined) {
+        msgText = "# firstname not found"
+        console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
+        return false; //prevent form submit/exit function 
+    }
+
+    if(txtlastname == null | txtlastname == undefined) {
+        msgText = "# lastname not found"
+        console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
+        return false; //prevent form submit/exit function 
+    }
+
+    //hide error lables
+    errorfirstname.style.display = "none"
+    
+    //clear element border color 
+    txtfirstname.style.borderColor = "initial" //or black 
+
+    //clear fields 
+    divdisplayinfo.innerText = "";
+    txtfirstname.value = "";
     txtlastname.value = "";
     txtemail.value = "";
     txtcomment.value = "";
+
+    txtfirstname.focus(); //move keybord cursor to field 
+
 }
 

@@ -166,15 +166,24 @@ function lnkArrayAddRemoveLoopDemo1()
     items.pop()
     //remove element at an index
     //items.splice(1,1) //splice(index, number_of_items_to_remove)
+   
     //print
     console.log(items)
     console.log("")
+
     //update
+    items[2] = 53.72
 
     //print
-   
+    console.log(items)
+    console.log("")
+
+    console.log("---- array loop ----")
     //array loop
+    for(ndx=0;ndx<items.length;ndx++){
+        console.log(`${ndx} - ${items[ndx]}`)
+    }
    
-   
+    console.log("")
     //other loop do loop, while loop , foreach 
 }

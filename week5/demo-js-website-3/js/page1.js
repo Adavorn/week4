@@ -6,7 +6,8 @@ function page_load(){
 }
 
 function lnkArrayDemo1(){
-    const msgText = "# page1: lnkArrayDemo1"
+    
+    let msgText = "# page1: lnkArrayDemo1"
 
     console.log(msgText.toUpperCase())
 

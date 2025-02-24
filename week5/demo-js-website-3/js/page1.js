@@ -160,10 +160,15 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log(items)
 
     console.log("")
+
+    console.log("--- remove item ---")
     //remove item from array 
-
-    //print array 
-
+    items.pop()
+    //remove element at an index
+    //items.splice(1,1) //splice(index, number_of_items_to_remove)
+    //print
+    console.log(items)
+    console.log("")
     //update
 
     //print
